@@ -131,6 +131,7 @@ server <- function(input, output) {
         z = ~ infmat
         ) %>% add_surface(
           colorbar = list(title = "IMR"),
+          hoverinfo = 'text',
           text = custom_text
       ) %>% layout(
         scene = list(xaxis= axx,
